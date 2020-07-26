@@ -1,2 +1,2 @@
 # Posted-Speedlimit
-Entirely rewritten and using NUI rather than 3d textdraw for increased performance.
+Improved performance (~0.02ms from 0.5ms personally) over the old resource by using NUI to display information rather than textdraw.
