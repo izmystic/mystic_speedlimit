@@ -15,7 +15,8 @@ files{
     'html/index.html',
     'html/app.js',
     'html/style.css',
-    'html/speedlimit.png'
+    'html/speedlimit.png',
+    'html/HWYGWDE.woff'
 }
 
 export "getSpeed"
