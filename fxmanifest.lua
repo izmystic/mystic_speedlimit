@@ -2,8 +2,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Linden'
-description "Based on Big Yoda's posted-speedlimit script."
+author 'Mystic'
+description "Based on Lindens fork of Big Yoda's posted-speedlimit script."
 version '1.0.0'
 
 -- What to run
