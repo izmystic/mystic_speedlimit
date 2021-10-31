@@ -3,7 +3,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'Mystic'
-description 'mystic-speedlimit
+description 'mystic-speedlimit'
 version '1.0.0'
 
 -- What to run
