@@ -3,5 +3,5 @@ Improved performance (~0.02ms from 0.5ms personally) over the old resource by us
 
 <details>
 <summary>Preview</summary>
-<img src="https://cdn.izmystic.gay/images/dnl5t2g9.jpg"/>
+<img src="https://cdn.izmystic.dev/images/ev6orgkj.png"/>
 </details>
