@@ -1,4 +1,4 @@
 # mystic-speedlimit
 Speedlimit display with an actual sign
 
-![](https://cdn.izmystic.dev/images/ev6orgkj.png)
+![](https://cdn.izmystic.dev/images/pm3jxkoc.png)
