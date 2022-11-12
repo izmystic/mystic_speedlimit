@@ -1,29 +1,48 @@
 @font-face {
-  font-family: "Highway Gothic Wide";
+  font-family: "SSEDOT";
   font-style: normal;
   font-weight: normal;
-  src: local("Highway Gothic Wide"), url("HWYGWDE.woff") format("woff");
+  src: local("SSEDOT"), url("fonts/SaaSeriesEDOT.woff") format("woff");
 }
+
+@font-face {
+  font-family: "HWYGWDE";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HWYGWDE"), url("fonts/HWYGWDE.woff") format("woff");
+}
+/* 
+body {
+  background: gray;
+} */
 
 .speedsign {
   position: fixed;
-  margin-top: 1vh;
-  margin-right: 1vh;
   top: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(./speedlimit.png);
-  background-repeat: no-repeat;
-  background-size: 4%;
-  background-position: right top;
+
+  margin: 1vh;
+
+  width: 5vw;
+  height: 11vh;
+
+  background-color: white;
+  border-radius: 0.3vw;
+  border: 0.2vw solid #211f20;
+  outline: 0.13vw solid white;
+  text-align: center;
+}
+
+.speed {
+  position: relative;
+  font-family: "SSEDOT";
+  font-size: 1.5vw;
+  color: #211f20;
 }
 
 .limit {
-  font-family: "Highway Gothic Wide";
-  font-size: 3vh;
-  position: absolute;
-  top: 4.5vh;
-  right: 1.7vh;
-  color: #090909;
+  position: relative;
+  font-family: "HWYGWDE";
+  font-size: 2.5vw;
+  color: #211f20;
 }

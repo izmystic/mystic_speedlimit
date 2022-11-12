@@ -1,16 +1,16 @@
 window.addEventListener("message", function (event) {
-    if (event.data.action == "display") {
-        type = event.data.type
+    if (event.data.action == "show") {
+        speed = event.data.speed
 
-        if (type === null) {
-            $(".speed").hide();
+        if (speed === null) {
+            document.querySelector(".speed").style.display = "none";
         } else {
-            $('.limit').html(type);
-            $(".speed").show();
+            document.querySelector(".limit").textContent = speed;
+            document.querySelector(".speed").style.display = "block";
         }
 
-        $(".ui").fadeIn();
+        document.querySelector(".ui").style.display = "block";
     } else if (event.data.action == "hide") {
-        $(".ui").fadeOut();
+        document.querySelector(".ui").style.display = "none";
     }
 });
