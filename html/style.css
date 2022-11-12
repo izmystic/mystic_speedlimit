@@ -11,10 +11,6 @@
   font-weight: normal;
   src: local("HWYGWDE"), url("fonts/HWYGWDE.woff") format("woff");
 }
-/* 
-body {
-  background: gray;
-} */
 
 .speedsign {
   position: fixed;
