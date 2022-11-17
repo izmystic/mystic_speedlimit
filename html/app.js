@@ -9,8 +9,8 @@ window.addEventListener("message", function (event) {
             document.querySelector(".speed").style.display = "block";
         }
 
-        document.querySelector(".ui").style.display = "block";
+        document.querySelector(".speedsign").style.display = "block";
     } else if (event.data.action == "hide") {
-        document.querySelector(".ui").style.display = "none";
+        document.querySelector(".speedsign").style.display = "none";
     }
 });
