@@ -1,11 +1,11 @@
 local show, sleep, speedlimit
 CreateThread(function()
   while true do
-    local vehicle = cache.vehicle
+    local vehicle = cache.vehicle -- local vehicle = GetVehiclePedIsIn(PlayerPedId())
     if vehicle then
       sleep = 10
       show = true
-      local player = cache.ped
+      local player = cache.ped -- local player = PlayerPedId()
       local coords = GetEntityCoords(player)
       local street = GetStreetNameFromHashKey(GetStreetNameAtCoord(coords.x, coords.y, coords.z))
       speedlimit = Config.SpeedLimits[street]
