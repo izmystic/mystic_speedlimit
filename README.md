@@ -3,7 +3,7 @@ Speedlimit display with an actual sign
 
 ## dependencies
 
-[ox_lib](https://github.com/overextended/ox_lib) \
+[ox_lib](https://github.com/overextended/ox_lib) (can easily be removed)
 
 ## screenshot
 
