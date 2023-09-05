@@ -12,33 +12,35 @@
   src: local("HWYGWDE"), url("fonts/HWYGWDE.woff") format("woff");
 }
 
-.speedsign {
-  position: fixed;
+#speedsign {
+  position: absolute;
   top: 0;
   right: 0;
 
   margin: 1vh;
 
-  width: 5vw;
-  height: 11vh;
+  width: 4em;
+  height: 5em;
 
   background-color: white;
-  border-radius: 0.3vw;
-  border: 0.2vw solid #211f20;
-  outline: 0.13vw solid white;
+  border-radius: 0.3em;
+  border: 0.2em solid #211f20;
+  outline: 0.15em solid white;
   text-align: center;
 }
 
-.speed {
+#speed {
   position: relative;
   font-family: "SSEDOT";
-  font-size: 1.5vw;
+  font-size: 1em;
   color: #211f20;
+  top: 5px;
 }
 
-.limit {
+#limit {
   position: relative;
   font-family: "HWYGWDE";
-  font-size: 2.5vw;
+  font-size: 2em;
+  top: 5px;
   color: #211f20;
 }

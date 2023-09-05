@@ -1,20 +1,29 @@
-local speedlimit = 420
-
+local show, sleep, speedlimit
 CreateThread(function()
-    while true do
-        local sleep = 1000
-        local player = PlayerPedId()
-        if IsPedInAnyVehicle(player) and not IsPauseMenuActive() then
-            sleep = 500
-            local playerloc = GetEntityCoords(player)
-            local streethash = GetStreetNameAtCoord(playerloc.x, playerloc.y, playerloc.z)
-            local street = GetStreetNameFromHashKey(streethash)
-            speedlimit = Config.SpeedLimits[street]
-            SendNUIMessage({ action = "show", speed = speedlimit })
-        else
-            sleep = 1000
-            SendNUIMessage({ action = "hide" })
-        end
-        Wait(sleep)
+  while true do
+    local vehicle = cache.vehicle
+    if vehicle then
+      sleep = 10
+      show = true
+      local player = cache.ped
+      local coords = GetEntityCoords(player)
+      local street = GetStreetNameFromHashKey(GetStreetNameAtCoord(coords.x, coords.y, coords.z))
+      speedlimit = Config.SpeedLimits[street]
+      if IsPauseMenuActive() then
+        show = false
+      end
+      SendNUIMessage({
+        action = "updateHud",
+        show = show,
+        speedlimit = speedlimit,
+      })
+    else
+      SendNUIMessage({ -- theres probably a beter way to hide it when not in a vehicle, but its functional
+        action = "updateHud",
+        show = false,
+      })
     end
+    sleep = 500
+    Wait(sleep)
+  end
 end)
